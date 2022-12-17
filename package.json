@@ -1,0 +1,27 @@
+{
+  "name": "vanilla-extract-tailwindcss",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "main": "dist/index.js",
+  "files": [
+    "/dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev:example": "pnpm --filter vite-react-example run dev",
+    "build:example": "pnpm --filter vite-react-example run build",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@vanilla-extract/sprinkles": "^1.5.1"
+  },
+  "devDependencies": {
+    "@karasushin/eslint-config": "^0.1.10",
+    "@vanilla-extract/css": "^1.9.2",
+    "@vanilla-extract/vite-plugin": "^3.7.0",
+    "eslint": "^8.29.0",
+    "typescript": "^4.9.4"
+  }
+}
