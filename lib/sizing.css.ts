@@ -1,7 +1,7 @@
 import { defineProperties } from '@vanilla-extract/sprinkles'
 import { basicNumberSize, basicPercentageSize, breakPoint, responsiveConditions } from './utils'
 
-export const basicSize = {
+export const basicScreenSize = {
   '3xs': '256px',
   '2xs': '288px',
   'xs': '320px',
@@ -38,7 +38,7 @@ export const sizingProperties = defineProperties({
     },
     maxWidth: {
       0: '0px',
-      ...basicSize,
+      ...basicScreenSize,
       none: 'none',
       full: '100%',
       min: 'min-content',
@@ -69,7 +69,7 @@ export const sizingProperties = defineProperties({
     },
     maxHeight: {
       0: '0px',
-      ...basicSize,
+      ...basicScreenSize,
       none: 'none',
       full: '100%',
       screen: '100vh',

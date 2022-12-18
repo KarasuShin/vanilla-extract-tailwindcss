@@ -1,5 +1,5 @@
 import { createSprinkles, defineProperties } from '@vanilla-extract/sprinkles'
-import { basicSize } from './sizing.css'
+import { basicScreenSize } from './sizing.css'
 import { basicNumberSize, basicPercentageSize, numericalMap, responsiveConditions } from './utils'
 
 const containerSprinkles = createSprinkles(defineProperties({
@@ -39,7 +39,7 @@ export const layoutProperties = defineProperties({
     },
     columns: {
       ...numericalMap,
-      ...basicSize,
+      ...basicScreenSize,
       auto: 'auto',
     },
     breakAfter: ['auto', 'avoid', 'all', 'avoid-page', 'page', 'left', 'right', 'column'],
